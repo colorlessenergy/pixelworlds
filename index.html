@@ -2,4 +2,66 @@
 layout: default
 ---
 
-<p>start</p>
+<header>
+  {% include nav.html %}
+  <h1>Pixel Worlds Game</h1>
+  <p>PLAY THIS GAME</p>
+</header>
+<section>
+  <div>
+    <h2>Pixel Worlds is a fun game</h2>
+    <h3>you should try it</h3>
+    <p>Pixel worlds is a fun game!</p>
+    <p>This game is made and manage by</p>
+    <p>really talented people.</p>
+  </div>
+</section>
+<section>
+  <div>
+    <h1>PIXEL WORLDS</h1>
+  </div>
+  <div>
+    <div>
+      <h2>download the game</h2>
+      <p>this game is so much fun</p>
+    </div>
+    <div>
+      <h2>pixel world forums</h2>
+      <p>see and post about your thoughts and ideas on the forums</p>
+    </div>
+  </div>
+</section>
+<section>
+  <div>
+    <div class="image-left"></div>
+    <div>
+      <h1>FUN THINGS TO DO</h1>
+      <p>you can do a lot of fun stuff like make worlds and build stuff</p>
+    </div>
+  </div>
+  <div>
+    <!-- images -->
+    <div>
+      <img src="http://via.placeholder.com/350x150" alt="">
+    </div>
+    <div>
+      <img src="http://via.placeholder.com/350x150" alt="">
+    </div>
+    <img src="http://via.placeholder.com/350x150" alt="">
+  </div>
+</section>
+<section>
+  <h1>ABOUT PIXEL WORLDS</h1>
+  <p>
+     Pixel Worlds is a massively multiplayer sandbox game for mobile platforms.
+     It is about having fun with other players, farming, building, chatting.
+  </p>
+  <p><a href="https://www.youtube.com/channel/UCd-67MFSZ25qvE7ZBnRkXQg/videos">find out more</a></p>
+</section>
+<section>
+  {% for staff in site.data.staff %}
+    <div style="background-image: url({{staff.bg-img}})">
+      <p>{{staff.title}}</p>
+    </div>
+  {% endfor %}
+</section>

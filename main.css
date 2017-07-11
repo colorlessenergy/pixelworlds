@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(images/pixelworldjake.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+}
+
+header nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+header nav div h2, header nav div p {
+  margin: 0;
+}
+
+header nav div, header nav img {
+  margin: 0 3%;
+}
