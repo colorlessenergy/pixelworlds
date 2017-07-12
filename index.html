@@ -18,6 +18,15 @@ layout: default
     <p>really talented people.</p>
   </div>
 </main>
+<section class="responsive-main">
+  <h2>Pixel Worlds is a fun game</h2>
+  <h3>you should try it</h3>
+  <p>
+    Pixel worlds is a fun game!
+    This game is made and manage by
+    really talented people.
+  </p>
+</section>
 <section class="info" id="pixel">
   <div class="info-title">
     <h1>PIXEL WORLDS</h1>
@@ -49,6 +58,17 @@ layout: default
     <div class="background-2">
       <img src="images/old-icon.png" alt="the icon of pixel world">
     </div>
+  </div>
+</section>
+<section class="image-grid-res">
+  <div class="text">
+    <h1>FUN THINGS TO DO</h1>
+    <p>You can build worlds and share with others!</p>
+  </div>
+  <div class="pics">
+    {% for res-pic in site.data.responsive-pics %}
+      <div style="background-image: url({{res-pic.img}})"></div>
+    {% endfor %}
   </div>
 </section>
 <section class="about">
