@@ -1,4 +1,5 @@
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
@@ -8,7 +9,29 @@ header {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
+}
+
+header .main {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header .main h1 {
+  font-size: 50px;
+}
+
+header .main p a {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
 }
 
 header nav {
@@ -19,9 +42,259 @@ header nav {
 }
 
 header nav div h2, header nav div p {
+  color: #fff;
   margin: 0;
+  text-align: center;
 }
 
 header nav div, header nav img {
   margin: 0 3%;
+}
+
+main {
+  background-image: url(images/pixelworlds.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+  z-index: -2;
+}
+
+main div {
+  position: fixed;
+  top: 36%;
+  right: 0;
+  margin-right: 5%;
+  z-index: -1;
+}
+
+main div p {
+  background-color: #fff;
+  font-size: 25px;
+  margin: 5px 0;
+  opacity: 0.8;
+}
+
+main div h2, main div h3 {
+  background-color: #fff;
+  font-size: 40px;
+  margin: 0;
+  opacity: 0.8;
+}
+
+main div h3 {
+  font-size: 30px;
+  margin: 20px 0 50px 0;
+}
+
+footer {
+  background-color: #fff;
+  height: 35vh;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer ul {
+  align-items: center;
+  display: flex;
+  height: 200px;
+  justify-content: center;;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+}
+
+footer ul a {
+  margin: 0 5%;
+}
+
+.about {
+  align-items: center;
+  background-image: url(images/sunset2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+}
+
+.about div {
+  width: 40%;
+}
+
+.about div h1 {
+  color: #19d1bb;
+  font-size: 40px;
+  margin: 0;
+}
+
+.about div p {
+  color: #19d1bb;
+  font-size: 20px;
+}
+
+.about div p:last-of-type {
+  padding: 30px 0;
+}
+
+.about div p a {
+  border: 2px solid #fff;
+  color: #19d1bb;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.jake {
+  height: 500px;
+}
+
+.jake div {
+  align-items: center;
+  background-size: cover;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.jake div p {
+  background-color: #000;
+  color: #fff;
+  font-size: 30px;
+  margin: 0;
+  padding: 30px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info .info-title {
+  background-color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+
+.info .info-title h1 {
+  margin: 0;
+}
+
+.info .more-info {
+  display: flex;
+}
+
+.info .more-info div {
+  align-items: center;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  width: 50%;
+}
+
+.info .more-info div h2 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.info .more-info div h2 a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  transition: color 1s ease;
+}
+
+.info .more-info div h2 a:hover {
+  color: yellow;
+}
+
+.info .more-info div p {
+  font-size: 30px;
+  width: 80%;
+  text-align: center;
+}
+
+.info .more-info .game {
+  background-image: url(images/pixelworldsbg.png);
+  background-position: 30%;
+}
+
+.info .more-info .forum {
+  background-image: url(images/pixelworldforum.jpg)
+}
+
+.image-grid {
+  background-color: #f2f1f1;
+}
+
+.image-grid .bot {
+  display: flex;
+}
+
+.image-grid .bot div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 260px;
+  width: 40%;
+}
+
+.image-grid .bot .background-1 {
+  background-image: url(images/worlds.jpeg);
+  text-align: center;
+}
+
+.image-grid .bot .background-1 img {
+  height: 100px;
+  width: 100px;
+}
+
+.image-grid .bot .background-2 {
+  background-image: url(images/massivemulti.png);
+}
+
+.image-grid .bot .background-2 img {
+  height: 100px;
+  width: 100px;
+  margin-left: -10%;
+}
+
+.image-grid .top {
+  display: flex;
+}
+
+.image-grid .image-left {
+  background-image: url(images/icon.jpg);
+  background-position: center;
+  height: 400px;
+  width: 40%;
+}
+
+.image-grid .top .text {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-grid .top .text h1 {
+  font-size: 50px;
+}
+
+.image-grid .top .text p {
+  text-align: center;
+  font-size: 25px;
 }

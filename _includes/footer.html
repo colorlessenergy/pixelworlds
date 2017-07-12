@@ -1,7 +1,9 @@
 <footer>
   <ul>
     {% for social in site.data.social %}
+      <a href="{{social.link}}">
       <li style="background-image: url({{social.image}})"></li>
+    </a>
     {% endfor %}
   </ul>
   <p>Brian Munoz 2017 &copy;</p>
