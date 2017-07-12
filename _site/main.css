@@ -211,13 +211,13 @@ footer ul a {
 }
 
 .info .more-info div h2 a {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
   transition: color 1s ease;
 }
 
 .info .more-info div h2 a:hover {
-  color: yellow;
+  color: #04838b;
 }
 
 .info .more-info div p {
@@ -227,12 +227,22 @@ footer ul a {
 }
 
 .info .more-info .game {
-  background-image: url(images/pixelworldsbg.png);
-  background-position: 30%;
+  background-image: url(images/game-sunset.jpg);
+  background-position: center;
+}
+
+.info .more-info .forum h2 a {
+  color: rgba(255, 252, 252, 0.9);
+
+}
+
+.info .more-info .forum p {
+  color: rgba(255, 252, 252, 0.9);
 }
 
 .info .more-info .forum {
-  background-image: url(images/pixelworldforum.jpg)
+  background-image: url(images/tropical.jpg);
+  background-position: center;
 }
 
 .image-grid {
